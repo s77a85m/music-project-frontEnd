@@ -13,7 +13,7 @@
 @tailwind components;
 @layer components{
     .title-color {
-       @apply text-gray-700 dark:text-gray-400;   
+       @apply text-gray-700;   
     } 
     .border-style{
         @apply border-gray-300;
