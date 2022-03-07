@@ -35,16 +35,29 @@ body{
 }
 /* x-cloak */
 [x-cloak] { display: none; }
-
-.top_swiper_container .top_swiper_next, .top_swiper_container .top_swiper_preve{
+/* top swiper button */
+.top_swiper_container .top_swiper_next, .top_swiper_container .top_swiper_prev{
     @apply bg-white rounded-2xl w-9 h-16 hidden lg:flex bg-opacity-50 backdrop-blur-sm border border-gray-300;
 }
 .top_swiper_container .top_swiper_next{
     @apply -right-3;
 }
-.top_swiper_container .top_swiper_next::after, .top_swiper_container .top_swiper_preve::after{
+.top_swiper_container .top_swiper_next::after, .top_swiper_container .top_swiper_prev::after{
     @apply text-xs font-bold text-gray-800;
 }
-.top_swiper_container .top_swiper_preve{
+.top_swiper_container .top_swiper_prev{
     @apply -left-3;
+}
+/* mini swiper button */
+.mini_swiper_cotainer .swiper_mini_next, .mini_swiper_cotainer .swiper_mini_prev{
+    @apply bg-gray-400 rounded-2xl w-6 h-10 hidden lg:flex bg-opacity-50 backdrop-blur-sm border border-gray-300;
+}
+.mini_swiper_cotainer .swiper_mini_next{
+    @apply right-5;
+}
+.mini_swiper_cotainer .swiper_mini_prev{
+    @apply left-5;
+}
+.mini_swiper_cotainer .swiper_mini_prev::after, .mini_swiper_cotainer .swiper_mini_next::after{
+    @apply text-xs text-gray-800 font-bold
 }

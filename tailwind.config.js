@@ -11,10 +11,11 @@ module.exports = {
     extend: {
       padding:{
         'md':'56%'
-      }
+      },
     },
   },
   plugins: [
     require('@tailwindcss/forms'),
+    require('@tailwindcss/line-clamp'),
   ],
 }
