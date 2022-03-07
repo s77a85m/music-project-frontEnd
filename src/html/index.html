@@ -486,6 +486,124 @@
                 </div>
             </div>
         </div>
+        <!-- get ticket -->
+        <section class="bg-gray-200 p-4">
+            <div class="bg-white flex flex-col">
+                <!-- title -->
+                <div class="flex-center w-full border-b border-style  h-14 text-base font-medium title-color">درخواست بليط</div>
+                <!-- count ticket -->
+                <div class="px-4">
+                    <div class="grid grid-cols-1 sm:grid-cols-2 border-b-2 border-dashed border-style">
+                        <div class="sm:py-6">
+                            <div class="py-6 border-b border-style sm:border-b-0 sm:border-r sm:py-0 sm:pr-4">
+                                <h4 class="text-xs font-normal title-color mb-4">تعداد بليط </h4>
+                                <div class="flex w-full gap-2 ">
+                                    <div class="flex-1 relative">
+                                        <input type="radio" name="tickets" id="one" class="absolute radio-checked:bg-purple-700 radio-checked:text-white top-0 right-0 invisible">
+                                        <label for="one" class="shadow-xl transition-all cursor-pointer duration-150 ease-out text-xl font-normal title-color border-2 border-purple-700 w-full h-10 flex-center rounded-xl bg-transparent">1</label>
+                                    </div>
+                                    <div class="flex-1 relative">
+                                        <input type="radio" name="tickets" id="tow" class="absolute top-0 radio-checked:bg-purple-700 radio-checked:text-white right-0 invisible">
+                                        <label for="tow" class="shadow-xl transition-all duration-150 cursor-pointer ease-out text-xl font-normal title-color border-2 border-purple-700 w-full h-10 flex-center rounded-xl bg-transparent">2</label>
+                                    </div>
+                                    <div class="flex-1 relative">
+                                        <input type="radio" name="tickets" id="trhee" class="absolute top-0 radio-checked:bg-purple-700 radio-checked:text-white right-0 invisible">
+                                        <label for="trhee" class="shadow-xl transition-all duration-150 cursor-pointer ease-out text-xl font-normal title-color border-2 border-purple-700 w-full h-10 flex-center rounded-xl bg-transparent">3</label>
+                                    </div>
+                                    <div class="flex-1 relative">
+                                        <input type="radio" name="tickets" id="four" class="absolute top-0 radio-checked:bg-purple-700 radio-checked:text-white right-0 invisible">
+                                        <label for="four" class="shadow-xl transition-all duration-150 ease-out cursor-pointer text-xl font-normal title-color border-2 border-purple-700 w-full h-10 flex-center rounded-xl bg-transparent">4</label>
+                                    </div>
+                                </div>                          
+                            </div>
+                        </div>
+                        <!-- custom count -->
+                        <div class="py-6 sm:pl-4">
+                            <h4 class="text-xs font-normal title-color mb-4">تعداد دلخواه </h4>
+                            <div class="relative flex w-full text-gray-700 transition-colors focus-within:text-purple-800">
+                                <input type="number" min="5" value="5" class="flex text-gray-500 text-sm font-medium w-full h-9 border border-style rounded-xl pl-7 transition-shadow ease-out focus:shadow-md focus:ring-0 focus:border-style" >
+                                <svg xmlns="http://www.w3.org/2000/svg" class="absolute h-4 w-4 top-2 left-2 right-auto bottom-auto" viewBox="0 0 20 20" fill="currentColor">
+                                    <path d="M5 3a2 2 0 00-2 2v2a2 2 0 002 2h2a2 2 0 002-2V5a2 2 0 00-2-2H5zM5 11a2 2 0 00-2 2v2a2 2 0 002 2h2a2 2 0 002-2v-2a2 2 0 00-2-2H5zM11 5a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2V5zM14 11a1 1 0 011 1v1h1a1 1 0 110 2h-1v1a1 1 0 11-2 0v-1h-1a1 1 0 110-2h1v-1a1 1 0 011-1z" />
+                                  </svg>
+                            </div>                    
+                        </div>
+                    </div> 
+                    <!-- form -->
+                    <div class="grid grid-cols-1 sm:grid-cols-2">
+                        <div class="sm:py-6">
+                            <div class="sm:border-r sm:border-style sm:pr-4">
+                                <!-- name -->
+                                <div class="py-6 sm:pt-0">
+                                    <h2 class="text-sm font-normal title-color mb-4">اطلاعات شخصي</h2>
+                                    <div class="w-full h-9">
+                                        <input type="text" class="rounded-lg text-xs w-full h-full font-medium title-color border border-style focus:ring-0 focus:border-gray-300 transition-shadow ease-out focus:shadow-md" placeholder="نام">
+                                    </div>
+                                </div>
+                                <!-- lastname -->
+                                <div class="pb-6">
+                                    <div class="w-full h-9">
+                                        <input type="text" class="rounded-lg text-xs w-full h-full font-medium title-color border border-style focus:ring-0 focus:border-gray-300 transition-shadow ease-out focus:shadow-md" placeholder="نام خانوادگي">
+                                    </div>
+                                </div>
+                                <!-- email -->
+                                <div class="pb-6">
+                                    <div class="w-full h-9">
+                                        <input type="email" class="invalid:border-red-500 peer valid:border-green-500 rounded-lg text-xs w-full h-full mb-2 font-medium title-color border border-style focus:ring-0 focus:border-gray-300 transition-shadow ease-out focus:shadow-md" placeholder="email">
+                                        <p class="text-xs font-medium text-red-500 invisible peer-invalid:visible">format email is not valid!</p>
+                                    </div>
+                                </div>
+                                <!-- gender -->
+                                <div class="pb-6 border-b border-style sm:border-0">
+                                    <div class="flex gap-12">
+                                        <h3 class="text-xs font-normal title-color">جنسيت</h3>
+                                        <div class="flex gap-10">
+                                            <div class=" flex items-center cursor-pointer text-xs gap-3 font-normal title-color">
+                                                <input type="radio" name="gender" id="male" class="focus:ring-0 focus:ring-offset-0">
+                                                <label for="male">آقا</label>
+                                            </div>
+                                            <div class="flex items-center cursor-pointer text-xs gap-3 font-normal title-color">
+                                                <input type="radio" name="gender" id="female" class="focus:ring-0 focus:ring-offset-0">
+                                                <label for="female">خانوم</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="sm:pl-4">
+                            <!-- choose order -->
+                            <div class="py-6">
+                                <div class="fles flex-col">
+                                    <h2 class="text-sm font-normal title-color pb-4">روش پرداخت</h2>
+                                    <div class="w-full h-9 ">
+                                        <select name="" id="" class="w-full h-full rounded-lg border text-xs font-normal title-color border-style focus:ring-0 focus:border-gray-300">
+                                            <option value="s" class="h-10">بانك سامان</option>
+                                            <option value="m">بانك ملي</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- discount -->
+                            <div class="pb-6 border-b border-style sm:border-0">
+                                <div class="flex flex-col gap-4">
+                                    <h3 class="text-xs font-normal title-color">.از طرح هاي بعدي باخرم كن</h3>
+                                    <div class="flex gap-10">
+                                        <div class=" flex items-center cursor-pointer text-xs gap-3 font-normal title-color">
+                                            <input type="radio" name="discount" id="yes" class="focus:ring-0 focus:ring-offset-0">
+                                            <label for="yes">بله</label>
+                                        </div>
+                                        <div class="flex items-center cursor-pointer text-xs gap-3 font-normal title-color">
+                                            <input type="radio" name="discount" id="no" class="focus:ring-0 focus:ring-offset-0">
+                                            <label for="no">خير</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
 
     <script src="../js/swiper-bundle.min.js"></script>
