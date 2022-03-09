@@ -19,7 +19,7 @@ module.exports = {
     require('@tailwindcss/forms'),
     require('@tailwindcss/line-clamp'),
     plugin(function({ addVariant }) {
-      addVariant('radio-checked', '&:checked ~ label')
+      addVariant('lable-checked', '&:checked ~ label')
     })
   ],
 }

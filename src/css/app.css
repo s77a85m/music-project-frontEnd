@@ -61,3 +61,11 @@ body{
 .mini_swiper_cotainer .swiper_mini_prev::after, .mini_swiper_cotainer .swiper_mini_next::after{
     @apply text-xs text-gray-800 font-bold
 }
+
+/* debugs */
+.swiper-slider .suggested_musics{
+    @apply py-4;
+}
+.swiper-slider .suggested_musics .swiper-wrapper .swiper-slide{
+    @apply w-80;
+}
