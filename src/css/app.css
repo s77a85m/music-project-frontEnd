@@ -67,5 +67,5 @@ body{
     @apply py-4;
 }
 .swiper-slider .suggested_musics .swiper-wrapper .swiper-slide{
-    @apply w-80;
+    @apply w-72;
 }
