@@ -24,9 +24,20 @@
     .custom-transition{
         @apply transition-all duration-300 ease-in;
     }
+    .scroll_fixed{
+        @apply h-full overflow-hidden;
+    }
 }
 
 @tailwind utilities;
+@layer utilities{
+    .text-rtl{
+        direction: rtl;
+    }
+    .text-ltr{
+        direction: ltr;
+    }
+}
 
 
 /* Iran sanse */
@@ -68,4 +79,16 @@ body{
 }
 .swiper-slider .suggested_musics .swiper-wrapper .swiper-slide{
     @apply w-72;
+}
+.handle_direction .rtl_flag{
+    @apply flex !important;
+}
+.handle_direction .ltr_flag{
+    @apply hidden !important;
+}
+.handle_direction.rtl .rtl_flag{
+    @apply hidden !important;
+}
+.handle_direction.rtl .ltr_flag{
+    @apply flex !important;
 }
