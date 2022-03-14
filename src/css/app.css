@@ -1,22 +1,39 @@
 @tailwind base;
 @layer base{
     @font-face {
-        font-family: IRANSans;
-        font-weight: 300;
+        font-family: IRANSansX;
         font-style: normal;
-        src: url('../public/fonts/Sansa4fran3.woff') format('woff'),
-        url('../public/fonts/Sansa4fran3.ttf') format('truetype');
-        src: url('../public/fonts/Sansa4fran3.eot');
+        font-weight: 600;
+        src: url('./fonts/woff/IRANSansX-Bold.woff') format('woff'),
+        url('./fonts/woff2/IRANSansX-bold.woff2') format('woff2');
+    }
+    @font-face {
+        font-family: IRANSansX;
+        font-style: normal;
+        font-weight: 500;
+        src: url('./fonts/woff/IRANSansX-Medium.woff') format('woff'),
+        url('./fonts/woff2/IRANSansX-Medium.woff2') format('woff2');
+    }
+    @font-face {
+        font-family: IRANSansX;
+        font-style: normal;
+        font-weight: 400;
+        src: url('./fonts/woff/IRANSansX-Regular.woff') format('woff'),
+        url('./fonts/woff2/IRANSansX-Regular.woff2') format('woff2');
+    }
+    input{
+        @apply rtl:number-fa;
     }
 }
+
 
 @tailwind components;
 @layer components{
     .title-color {
-       @apply text-gray-700;   
+       @apply text-gray-700 dark:text-gray-400;   
     } 
     .border-style{
-        @apply border-gray-300;
+        @apply border-gray-300 dark:border-gray-600;
     }
     .flex-center{
         @apply flex items-center justify-center;
@@ -37,12 +54,17 @@
     .text-ltr{
         direction: ltr;
     }
+    .number-fa {
+        -moz-font-feature-settings: "ss02";
+        -webkit-font-feature-settings: "ss02";
+        font-feature-settings: "ss02";
+    }
 }
 
 
 /* Iran sanse */
 body{
-    @apply font-body;
+    @apply font-iransanse;
 }
 /* x-cloak */
 [x-cloak] { display: none; }
@@ -91,4 +113,17 @@ body{
 }
 .handle_direction.rtl .ltr_flag{
     @apply flex !important;
+}
+
+.handle_darkmod .moon{
+    @apply block;
+}
+.handle_darkmod .sun{
+    @apply hidden;
+}
+.handle_darkmod.darkMod .moon{
+    @apply hidden !important;
+}
+.handle_darkmod.darkMod .sun{
+    @apply block !important;
 }
