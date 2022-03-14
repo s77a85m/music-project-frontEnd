@@ -127,3 +127,9 @@ body{
 .handle_darkmod.darkMod .sun{
     @apply block !important;
 }
+.fixed_navbar .navbar_items{
+    @apply title-color;
+}
+.fixed_navbar .navbar_items.active{
+    @apply text-purple-700 dark:text-indigo-600;
+}

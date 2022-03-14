@@ -40,6 +40,7 @@ module.exports = {
     require('@tailwindcss/line-clamp'),
     plugin(function({ addVariant }) {
       addVariant('lable-checked', '&:checked ~ label')
+      addVariant('group2-hover', '.group2:hover &')
     })
   ],
 }

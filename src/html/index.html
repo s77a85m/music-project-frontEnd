@@ -58,11 +58,33 @@
                                     </svg>
                                 </a>
                                 <ul
-                                    class="list-none hidden group-hover:flex absolute rtl:left-auto rtl:right-full dark:bg-dark-800 top-0 left-full bg-white w-40  flex-col rounded-lg overflow-hidden border border-style">
-                                    <li>
+                                    class="list-none hidden group-hover:flex absolute rtl:left-auto rtl:right-full dark:bg-dark-800 top-0 left-full bg-white w-40  flex-col rounded-lg  border border-style">
+                                    <li class="relative group2">
                                         <a href="#"
-                                            class="p-2 flex text-xs text-gray-700 dark:text-gray-400 dark:hover:bg-transparent dark:hover:text-indigo-600 font-medium hover:bg-gray-300 hover:text-indigo-700 custom-transition">مهدي
-                                            احمدوند</a>
+                                            class=" p-2 text-xs font-medium flex justify-between items-center text-gray-600 dark:text-gray-400 dark:hover:bg-transparent dark:hover:text-indigo-600 hover:text-indigo-700 hover:bg-gray-300 custom-transition">
+                                            <span>مهدي احمدوند</span>
+                                            <svg xmlns="http://www.w3.org/2000/svg" class="h-3 rtl:rotate-180 w-3"
+                                                viewBox="0 0 20 20" fill="currentColor">
+                                                <path fill-rule="evenodd"
+                                                    d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+                                                    clip-rule="evenodd" />
+                                            </svg>
+                                        </a>
+                                        <ul
+                                            class="list-none hidden group2-hover:flex absolute rtl:left-auto rtl:right-full dark:bg-dark-800 top-0 left-full bg-white w-40  flex-col rounded-lg overflow-hidden border border-style">
+                                            <li>
+                                                <a href="#"
+                                                    class="p-2 flex text-xs text-gray-700 dark:text-gray-400 dark:hover:bg-transparent dark:hover:text-indigo-600 font-medium hover:bg-gray-300 hover:text-indigo-700 custom-transition">دريا</a>
+                                            </li>
+                                            <li>
+                                                <a href="#"
+                                                    class="p-2 flex text-xs text-gray-700 dark:text-gray-400 dark:hover:bg-transparent dark:hover:text-indigo-600 font-medium hover:bg-gray-300 hover:text-indigo-700 custom-transition">عشق اول</a>
+                                            </li>
+                                            <li>
+                                                <a href="#"
+                                                    class="p-2 flex text-xs text-gray-700 dark:text-gray-400 dark:hover:bg-transparent dark:hover:text-indigo-600 font-medium hover:bg-gray-300 hover:text-indigo-700 custom-transition">آرامش</a>
+                                            </li>
+                                        </ul>
                                     </li>
                                     <li>
                                         <a href="#"
@@ -331,7 +353,7 @@
         </div>
     </nav>
     <!-- navbar ends -->
-    <main class="pt-4">
+    <main class="pt-4 mb-20 lg:mb-0">
         <!-- slider start -->
         <div class="container mb-10 grid grid-cols-1 sm:grid-cols-3 gap-4">
             <!-- sliders -->
@@ -1209,6 +1231,25 @@
                 </div>
             </div>
         </section>
+        <!-- bottom icons -->
+        <div class="fixed top-auto bottom-0 inset-x-0 lg:hidden h-16 z-30 border-t border-style bg-white dark:bg-dark-800">
+            <div class="container h-full flex items-center fixed_navbar">
+                <a href="#" class="flex-1 flex-center text-sm font-medium navbar_items active flex-col gap-1">
+                    <!-- icon -->
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                        <path d="M10.707 2.293a1 1 0 00-1.414 0l-7 7a1 1 0 001.414 1.414L4 10.414V17a1 1 0 001 1h2a1 1 0 001-1v-2a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 001 1h2a1 1 0 001-1v-6.586l.293.293a1 1 0 001.414-1.414l-7-7z" />
+                    </svg>
+                    <span class="">خانه</span>
+                </a>
+                <a href="#" class="flex-1 flex-center text-sm font-medium navbar_items  flex-col gap-1">
+                    <!-- icon -->
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                        <path fill-rule="evenodd" d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z" clip-rule="evenodd" />
+                      </svg>
+                    <span class="">علاقه مندي</span>
+                </a>
+            </div>
+        </div>
     </main>
 
     <script src="../js/swiper-bundle.min.js"></script>
