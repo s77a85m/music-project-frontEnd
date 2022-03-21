@@ -134,18 +134,50 @@ body{
     @apply text-purple-700 dark:text-indigo-600;
 }
 
-.top_swiper_singles .swiper-button-next, .top_swiper_singles .swiper-button-prev{
+.top_swiper_singles .swiper_top_next, .top_swiper_singles .swiper_top_prev{
     @apply bg-white bg-opacity-40 hidden lg:flex backdrop-blur-sm rounded-lg w-6 h-10;
 }
-.top_swiper_singles .swiper-button-next{
+.top_swiper_singles .swiper_top_next{
     @apply -right-3;
 }
-.top_swiper_singles .swiper-button-prev{
+.top_swiper_singles .swiper_top_prev{
     @apply -left-3;
 }
-.top_swiper_singles .swiper-button-next::after, .top_swiper_singles .swiper-button-prev::after{
+.top_swiper_singles .swiper_top_next::after, .top_swiper_singles .swiper_top_prev::after{
     @apply text-sm text-gray-700 font-bold ;
 }
 .top_swiper_singles .top_swiper_single{
     @apply py-4;
 }
+
+.new_slider .swiper_new_next, .new_slider .swiper_new_prev{
+    @apply bg-white bg-opacity-40 hidden lg:flex backdrop-blur-sm rounded-lg w-6 h-10;
+}
+.new_slider .swiper_new_next{
+    @apply -right-3;
+}
+.new_slider .swiper_new_prev{
+    @apply -left-3;
+}
+.new_slider .swiper_new_next::after, .new_slider .swiper_new_prev::after{
+    @apply text-sm text-gray-700 font-bold ;
+}
+.new_slider .new_swiper{
+    @apply pb-4;
+}
+.all_slider .swiper_all_next, .all_slider .swiper_all_prev{
+    @apply bg-white bg-opacity-40 hidden lg:flex backdrop-blur-sm rounded-lg w-6 h-10;
+}
+.all_slider .swiper_all_next{
+    @apply -right-3;
+}
+.all_slider .swiper_all_prev{
+    @apply -left-3;
+}
+.all_slider .swiper_all_next::after, .all_slider .swiper_all_prev::after{
+    @apply text-sm text-gray-700 font-bold ;
+}
+.all_slider .all_swiper{
+    @apply pb-4;
+}
+
