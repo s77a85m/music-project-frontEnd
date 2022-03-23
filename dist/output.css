@@ -1071,6 +1071,10 @@ select {
   height: 0.5rem;
 }
 
+.h-7 {
+  height: 1.75rem;
+}
+
 .h-40 {
   height: 10rem;
 }
@@ -1149,6 +1153,10 @@ select {
 
 .w-5\/6 {
   width: 83.333333%;
+}
+
+.w-9 {
+  width: 2.25rem;
 }
 
 .max-w-xs {
@@ -1336,10 +1344,6 @@ select {
 
 .rounded-full {
   border-radius: 9999px;
-}
-
-.rounded-sm {
-  border-radius: 0.125rem;
 }
 
 .rounded-md {
@@ -2861,8 +2865,16 @@ body {
     grid-column-end: 12;
   }
 
+  .md\:flex {
+    display: flex;
+  }
+
   .md\:grid {
     display: grid;
+  }
+
+  .md\:hidden {
+    display: none;
   }
 
   .md\:h-24 {

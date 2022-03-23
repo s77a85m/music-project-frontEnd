@@ -16,12 +16,12 @@
             <!-- hamberger menu -->
             <div>
                 <svg x-on:click="handleOpenMenu()" xmlns="http://www.w3.org/2000/svg"
-                    class="h-6 w-6 title-color sm:hidden" viewBox="0 0 20 20" fill="currentColor">
+                    class="h-6 w-6 title-color md:hidden" viewBox="0 0 20 20" fill="currentColor">
                     <path fill-rule="evenodd"
                         d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
                         clip-rule="evenodd" />
                 </svg>
-                <ul class="hidden list-none sm:flex items-center gap-2">
+                <ul class="hidden list-none md:flex items-center gap-2">
                     <!-- home -->
                     <li>
                         <a href="#"
@@ -211,20 +211,24 @@
                 </ul>
             </div>
             <!-- darkmod, direction, pro img -->
-            <div class="flex flex-row-reverse gap-4 justify-center items-center">
+            <div class="flex flex-row-reverse gap-2 justify-center items-center w-64 sm:w-auto">
+                <!-- logo -->
+                <a href="#" class="w-32 sm:w-auto">
+                    <img src="../img/smal-dimonds.png" alt="arkenmusic" class="w-full h-full">
+                </a>
                 <!-- avatar -->
-                <a href="#">
-                    <img src="../img/avatar.jpg" class="h-8 w-8 rounded-full" alt="avatar" />
+                <a href="#" class=" w-9">
+                    <img src="../img/avatar.jpg" class="h-full w-full rounded-full" alt="avatar" />
                 </a>
                 <!-- rtl -->
                 <div x-data="handleDirection" class="handle_direction">
                     <div x-on:click="makeRtl()" x-cloak
-                        class="flex-center rtl_flag w-10 h-10 rounded-full hover:shadow-lg hover:cursor-pointer custom-transition">
-                        <img src="../img/rtl.jpg" alt="rtl" class="w-8 h-8 rounded-full" />
+                        class="flex-center rtl_flag w-8 h-8 rounded-full hover:shadow-lg hover:cursor-pointer custom-transition">
+                        <img src="../img/rtl.jpg" alt="rtl" class="w-5 h-5 rounded-full" />
                     </div>
                     <div x-on:click="makeLtr()" x-cloak
-                        class="flex-center ltr_flag w-10 h-10 rounded-full hover:shadow-lg hover:cursor-pointer custom-transition">
-                        <img src="../img/ltr.jpg" alt="rtl" class="w-8 h-8 rounded-full" />
+                        class="flex-center ltr_flag w-8 h-5 rounded-full hover:shadow-lg hover:cursor-pointer custom-transition">
+                        <img src="../img/ltr.jpg" alt="rtl" class="w-5 h-5 rounded-full" />
                     </div>
                 </div>
                 <!-- dark mod -->
@@ -248,7 +252,7 @@
                 <!-- search -->
                 <div x-data="searchBtn">
                     <div x-on:click="openSearch()"
-                        class=" rounded-full flex flex-center title-color cursor-pointer hover:shadow-md transition-all w-10 h-10">
+                        class=" rounded-full flex flex-center title-color cursor-pointer hover:shadow-md transition-all w-8 h-8">
                         <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
                             <path fill-rule="evenodd"
                                 d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z"
