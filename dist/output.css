@@ -949,6 +949,10 @@ select {
   margin: 0.5rem;
 }
 
+.m-1 {
+  margin: 0.25rem;
+}
+
 .my-4 {
   margin-top: 1rem;
   margin-bottom: 1rem;
@@ -957,6 +961,11 @@ select {
 .my-3 {
   margin-top: 0.75rem;
   margin-bottom: 0.75rem;
+}
+
+.my-2 {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
 }
 
 .mb-4 {
@@ -985,6 +994,10 @@ select {
 
 .mb-3 {
   margin-bottom: 0.75rem;
+}
+
+.mr-2 {
+  margin-right: 0.5rem;
 }
 
 .flex {
@@ -1071,12 +1084,12 @@ select {
   height: 0.5rem;
 }
 
-.h-7 {
-  height: 1.75rem;
-}
-
 .h-40 {
   height: 10rem;
+}
+
+.h-screen {
+  height: 100vh;
 }
 
 .max-h-\[408px\] {
@@ -1111,16 +1124,24 @@ select {
   width: 0.75rem;
 }
 
+.w-64 {
+  width: 16rem;
+}
+
+.w-32 {
+  width: 8rem;
+}
+
+.w-9 {
+  width: 2.25rem;
+}
+
 .w-8 {
   width: 2rem;
 }
 
 .w-10 {
   width: 2.5rem;
-}
-
-.w-64 {
-  width: 16rem;
 }
 
 .w-4 {
@@ -1133,10 +1154,6 @@ select {
 
 .w-20 {
   width: 5rem;
-}
-
-.w-32 {
-  width: 8rem;
 }
 
 .w-1\/2 {
@@ -1155,8 +1172,12 @@ select {
   width: 83.333333%;
 }
 
-.w-9 {
-  width: 2.25rem;
+.w-60 {
+  width: 15rem;
+}
+
+.w-80 {
+  width: 20rem;
 }
 
 .max-w-xs {
@@ -1314,12 +1335,12 @@ select {
   gap: 0.25rem;
 }
 
-.gap-4 {
-  gap: 1rem;
-}
-
 .gap-3 {
   gap: 0.75rem;
+}
+
+.gap-4 {
+  gap: 1rem;
 }
 
 .gap-12 {
@@ -1358,6 +1379,14 @@ select {
   border-radius: 0.75rem;
 }
 
+.rounded {
+  border-radius: 0.25rem;
+}
+
+.rounded-sm {
+  border-radius: 0.125rem;
+}
+
 .rounded-t-lg {
   border-top-left-radius: 0.5rem;
   border-top-right-radius: 0.5rem;
@@ -1389,6 +1418,11 @@ select {
 
 .border-2 {
   border-width: 2px;
+}
+
+.border-y {
+  border-top-width: 1px;
+  border-bottom-width: 1px;
 }
 
 .border-b {
@@ -1597,6 +1631,11 @@ select {
 .px-6 {
   padding-left: 1.5rem;
   padding-right: 1.5rem;
+}
+
+.px-10 {
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
 }
 
 .pt-20 {
@@ -2198,6 +2237,15 @@ body {
   cursor: pointer;
 }
 
+.hover\:border-l-4:hover {
+  border-left-width: 4px;
+}
+
+.hover\:border-blue-500:hover {
+  --tw-border-opacity: 1;
+  border-color: rgb(59 130 246 / var(--tw-border-opacity));
+}
+
 .hover\:bg-gray-300:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(209 213 219 / var(--tw-bg-opacity));
@@ -2284,9 +2332,57 @@ body {
   border-width: 0px;
 }
 
+.focus\:border:focus {
+  border-width: 1px;
+}
+
+.focus\:border-l:focus {
+  border-left-width: 1px;
+}
+
+.focus\:border-l-2:focus {
+  border-left-width: 2px;
+}
+
+.focus\:border-l-4:focus {
+  border-left-width: 4px;
+}
+
 .focus\:border-gray-300:focus {
   --tw-border-opacity: 1;
   border-color: rgb(209 213 219 / var(--tw-border-opacity));
+}
+
+.focus\:border-blue-500:focus {
+  --tw-border-opacity: 1;
+  border-color: rgb(59 130 246 / var(--tw-border-opacity));
+}
+
+.focus\:bg-gradient-to-r:focus {
+  background-image: linear-gradient(to right, var(--tw-gradient-stops));
+}
+
+.focus\:from-blue-400:focus {
+  --tw-gradient-from: #60a5fa;
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgb(96 165 250 / 0));
+}
+
+.focus\:from-blue-100:focus {
+  --tw-gradient-from: #dbeafe;
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgb(219 234 254 / 0));
+}
+
+.focus\:via-slate-100:focus {
+  --tw-gradient-stops: var(--tw-gradient-from), #f1f5f9, var(--tw-gradient-to, rgb(241 245 249 / 0));
+}
+
+.focus\:to-white:focus {
+  --tw-gradient-to: #fff;
+}
+
+.focus\:text-blue-500:focus {
+  --tw-text-opacity: 1;
+  color: rgb(59 130 246 / var(--tw-text-opacity));
 }
 
 .focus\:shadow-inner:focus {
@@ -2314,6 +2410,15 @@ body {
 
 .focus\:ring-offset-0:focus {
   --tw-ring-offset-width: 0px;
+}
+
+.active\:border-l-4:active {
+  border-left-width: 4px;
+}
+
+.active\:border-blue-500:active {
+  --tw-border-opacity: 1;
+  border-color: rgb(59 130 246 / var(--tw-border-opacity));
 }
 
 .group:hover .group-hover\:visible {
@@ -2709,16 +2814,12 @@ body {
     display: block;
   }
 
-  .sm\:flex {
-    display: flex;
-  }
-
-  .sm\:hidden {
-    display: none;
-  }
-
   .sm\:h-24 {
     height: 6rem;
+  }
+
+  .sm\:w-auto {
+    width: auto;
   }
 
   .sm\:w-9\/12 {
@@ -2727,10 +2828,6 @@ body {
 
   .sm\:w-48 {
     width: 12rem;
-  }
-
-  .sm\:w-auto {
-    width: auto;
   }
 
   .sm\:max-w-\[34rem\] {
