@@ -1100,6 +1100,10 @@ select {
   height: 7rem;
 }
 
+.h-32 {
+  height: 8rem;
+}
+
 .max-h-\[408px\] {
   max-height: 408px;
 }
@@ -1279,6 +1283,14 @@ select {
   resize: none;
 }
 
+.scroll-m-4 {
+  scroll-margin: 1rem;
+}
+
+.-scroll-mr-4 {
+  scroll-margin-right: -1rem;
+}
+
 .list-none {
   list-style-type: none;
 }
@@ -1371,12 +1383,20 @@ select {
   gap: 1.75rem;
 }
 
+.overflow-auto {
+  overflow: auto;
+}
+
 .overflow-hidden {
   overflow: hidden;
 }
 
 .overflow-y-auto {
   overflow-y: auto;
+}
+
+.overflow-y-scroll {
+  overflow-y: scroll;
 }
 
 .rounded-lg {
@@ -3079,6 +3099,14 @@ body {
 }
 
 @media (min-width: 1024px) {
+  .lg\:scroll_fixed {
+    height: 100%;
+  }
+
+  .lg\:scroll_fixed {
+    overflow: hidden;
+  }
+
   .lg\:relative {
     position: relative;
   }
