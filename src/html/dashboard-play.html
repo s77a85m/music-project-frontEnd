@@ -488,7 +488,7 @@
                             <!-- proggres -->
                             <div class="mt-5 px-4 w-full gap-1 flex flex-col">
                                 <!-- porggres bar -->
-                                <div id="progressContainer" class="w-full h-[2px] rounded-full dark:bg-gray-600 bg-gray-300">
+                                <div id="progressContainer" class="w-full cursor-pointer h-[2px] rounded-full dark:bg-gray-600 bg-gray-300">
                                     <div id="progressBar" class="h-full dark:bg-gray-300 bg-gray-600" style="width: 0%;"></div>
                                 </div>
                                 <!-- times -->
@@ -498,13 +498,11 @@
                                 </div>
                             </div>
                             <!-- buttom -->
-                            <div class="flex w-full gap-4 mt-5 justify-center">
+                            <div class="flex w-full h-10 gap-4 mt-5 justify-center">
                                 <!-- mix -->
                                 <button id="mix" class="text-gray-700 p-3 rounded-full flex-center active:scale-90 transition-all duration-150 ease-in dark:text-gray-200">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-shuffle" viewBox="0 0 16 16">
-                                        <path fill-rule="evenodd" d="M0 3.5A.5.5 0 0 1 .5 3H1c2.202 0 3.827 1.24 4.874 2.418.49.552.865 1.102 1.126 1.532.26-.43.636-.98 1.126-1.532C9.173 4.24 10.798 3 13 3v1c-1.798 0-3.173 1.01-4.126 2.082A9.624 9.624 0 0 0 7.556 8a9.624 9.624 0 0 0 1.317 1.918C9.828 10.99 11.204 12 13 12v1c-2.202 0-3.827-1.24-4.874-2.418A10.595 10.595 0 0 1 7 9.05c-.26.43-.636.98-1.126 1.532C4.827 11.76 3.202 13 1 13H.5a.5.5 0 0 1 0-1H1c1.798 0 3.173-1.01 4.126-2.082A9.624 9.624 0 0 0 6.444 8a9.624 9.624 0 0 0-1.317-1.918C4.172 5.01 2.796 4 1 4H.5a.5.5 0 0 1-.5-.5z"/>
-                                        <path d="M13 5.466V1.534a.25.25 0 0 1 .41-.192l2.36 1.966c.12.1.12.284 0 .384l-2.36 1.966a.25.25 0 0 1-.41-.192zm0 9v-3.932a.25.25 0 0 1 .41-.192l2.36 1.966c.12.1.12.284 0 .384l-2.36 1.966a.25.25 0 0 1-.41-.192z"/>
-                                      </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" width="16px" height="18px" viewBox="0 0 8 8"><path d="M6 0v1h-.5c-.35 0-.56.1-.78.38L3.31 3.16 1.78 1.38C1.56 1.12 1.34 1 1 1H0v1h1c-.05 0 .01.04.03.03l1.63 1.91L1 6H0v1h1c.35 0 .56-.1.78-.38l1.53-1.91 1.66 1.91c.22.26.44.38.78.38H6v1l2-1.5L6 5v1h-.22c-.01-.01-.05-.04-.06-.03L3.97 3.91 5.5 2H6v1l2-1.5L6 0z"  class="color000 svgShape"></path>
+                                    </svg>
                                 </button>
                                 <!-- left -->
                                 <button id="left" class="text-gray-700 flex-center active:scale-90 transition-all duration-150 ease-in dark:text-gray-200">
@@ -525,11 +523,11 @@
                                     </svg>
                                 </button>
                                 <!-- reloade -->
-                                <button id="reload" class="text-gray-700 p-3 flex-center active:scale-90 transition-all duration-150 ease-in dark:text-gray-200">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-arrow-repeat" viewBox="0 0 16 16">
-                                        <path d="M11.534 7h3.932a.25.25 0 0 1 .192.41l-1.966 2.36a.25.25 0 0 1-.384 0l-1.966-2.36a.25.25 0 0 1 .192-.41zm-11 2h3.932a.25.25 0 0 0 .192-.41L2.692 6.23a.25.25 0 0 0-.384 0L.342 8.59A.25.25 0 0 0 .534 9z"/>
-                                        <path fill-rule="evenodd" d="M8 3c-1.552 0-2.94.707-3.857 1.818a.5.5 0 1 1-.771-.636A6.002 6.002 0 0 1 13.917 7H12.9A5.002 5.002 0 0 0 8 3zM3.1 9a5.002 5.002 0 0 0 8.757 2.182.5.5 0 1 1 .771.636A6.002 6.002 0 0 1 2.083 9H3.1z"/>
-                                      </svg>
+                                <button id="reload" class="text-gray-700 rounded-full p-3 flex-center active:scale-90 transition-all duration-150 ease-in dark:text-gray-200">
+                                    <svg xmlns="http://www.w3.org/2000/svg"  width="18px" height="25px" fill="currentColor" viewBox="0 0 24 24">
+                                        <path d="M7 7h10v1.79c0 .45.54.67.85.35l2.79-2.79c.2-.2.2-.51 0-.71l-2.79-2.79c-.31-.31-.85-.09-.85.36V5H6c-.55 0-1 .45-1 1v4c0 .55.45 1 1 1s1-.45 1-1V7zm10 10H7v-1.79c0-.45-.54-.67-.85-.35l-2.79 2.79c-.2.2-.2.51 0 .71l2.79 2.79c.31.31.85.09.85-.36V19h11c.55 0 1-.45 1-1v-4c0-.55-.45-1-1-1s-1 .45-1 1v3zm-4-2.75V9.81c0-.45-.36-.81-.81-.81-.13 0-.25.03-.36.09l-1.49.74c-.21.1-.34.32-.34.55 0 .34.28.62.62.62h.88v3.25c0 .41.34.75.75.75s.75-.34.75-.75z"  class="color000 svgShape">
+                                        </path>
+                                    </svg>
                                 </button>
                             </div>
                         </div>
@@ -697,18 +695,17 @@
         }
         function nextSong(){
             
-            if(mixBtn.classList.contains('bg-gray-800')){
+            if(mixBtn.classList.contains('dark:bg-gray-800')){
                 let array=[];
-                console.log(songIndex)
                 for(let i=0; i<songs.length; i++){
                     if(i===songIndex){
                         continue
                     }
                     array.push(i); 
                 }
-                console.log(array)
                 songIndex=array[Math.floor(Math.random() * array.length)];
-                console.log(songIndex)
+            }else if(reloadBtn.classList.contains('dark:bg-gray-800')){
+                songIndex;
             }else{
                 songIndex++
             }
@@ -749,12 +746,23 @@
         }
 
         function setRandom(){
-            let isActive = mixBtn.classList.contains('bg-gray-800');
+            let isActive = mixBtn.classList.contains('dark:bg-gray-800');
             
             if(isActive){
-                mixBtn.classList.remove('bg-gray-800')
+                mixBtn.classList.remove('dark:bg-gray-800', 'bg-gray-300')
             }else{
-                mixBtn.classList.add('bg-gray-800')
+                reloadBtn.classList.remove('dark:bg-gray-800', 'bg-gray-300');
+                mixBtn.classList.add('dark:bg-gray-800', 'bg-gray-300')
+            }
+        }
+
+        function setRepeat(){
+            let isRepeat = reloadBtn.classList.contains('dark:bg-gray-800');
+            if(isRepeat) {
+                reloadBtn.classList.remove('dark:bg-gray-800', 'bg-gray-300');
+            }else{
+                mixBtn.classList.remove('dark:bg-gray-800', 'bg-gray-300');
+                reloadBtn.classList.add('dark:bg-gray-800', 'bg-gray-300');
             }
         }
 
@@ -778,6 +786,8 @@
         audio.addEventListener('ended', nextSong)
         // click random
         mixBtn.addEventListener('click', setRandom)
+        // click reload
+        reloadBtn.addEventListener('click', setRepeat)
 
     </script>
     <script>
