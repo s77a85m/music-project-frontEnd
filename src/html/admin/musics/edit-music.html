@@ -65,18 +65,59 @@
                             <textarea name="description" id="" class="w-full h-28 rounded-lg focus:ring-0 focus:border-gray-300 border border-gray-300 text-xs font-normal text-gray-500 resize-none">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان را می طلبد، تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی، و فرهنگ پیشرو در زبان فارسی ایجاد کرد، در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها، و شرایط سخت تایپ به پایان رسد و زمان مورد نیاز شامل حروفچینی دستاوردهای اصلی، و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.</textarea>                       
                         </div>
                         <!-- part2 form-->
-                        <div class="w-30 flex flex-col justify-center gap-3 items-center">
-                            <img src="../../../img/avatar.jpg" alt="avater" class="rounded-md">
-                            <input type="file" id="image"  value="انتخاب تصوير" class="absolute invisible">
-                            <label for="image" class="text-xs text-white font-normal rounded-md p-2 flex-center bg-purple-500 ">
-                                <span>انتخاب تصوير جديد</span>
-                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
-                                    <path fill-rule="evenodd" d="M4 3a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V5a2 2 0 00-2-2H4zm12 12H4l4-8 3 6 2-4 3 6z" clip-rule="evenodd" />
-                                  </svg>
-                            </label>
+                        <div class="flex flex-col sm:p-4">
+                            <div class="w-30 flex flex-col justify-center gap-3 items-center">
+                                <img src="../../../img/avatar.jpg" alt="avater" class="rounded-md">
+                                <input type="file" id="image"  value="انتخاب تصوير" class="absolute invisible">
+                                <label for="image" class="text-xs text-white font-normal rounded-md p-2 flex-center bg-purple-500 ">
+                                    <span>انتخاب تصوير جديد</span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                                        <path fill-rule="evenodd" d="M4 3a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V5a2 2 0 00-2-2H4zm12 12H4l4-8 3 6 2-4 3 6z" clip-rule="evenodd" />
+                                      </svg>
+                                </label>
+                            </div>
+                            <div class="flex flex-col">
+                                <!-- 128 -->
+                                <div class="w-full">
+                                    <audio class="w-full h-8" controls name="baran">
+                                        <source type="audio/mpeg"
+                                            src="../../../mp3/Hojat Ashrafzadeh & Reza Rashidpour - Baran Bebarad.mp3">
+                                    </audio>
+                                    <input type="file" id="mp3_128"  value="انتخاب تصوير" class="absolute invisible">
+                                    <label for="mp3_128" class="text-xs text-white font-normal rounded-t-md cursor-pointer p-2 flex-center bg-purple-500 ">
+                                        <span>كيفيت 128</span>
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                                            <path d="M18 3a1 1 0 00-1.196-.98l-10 2A1 1 0 006 5v9.114A4.369 4.369 0 005 14c-1.657 0-3 .895-3 2s1.343 2 3 2 3-.895 3-2V7.82l8-1.6v5.894A4.37 4.37 0 0015 12c-1.657 0-3 .895-3 2s1.343 2 3 2 3-.895 3-2V3z" />
+                                          </svg>
+                                    </label>
+                                    <div class="w-full h-auto flex flex-col justify-center items-center p-2 bg-blue-200 rounded-b-md">
+                                        <span class="text-gray-500 text-xs font-medium">image_1.png - uploading</span>
+                                        <div class="flex-center px-3 gap-2 w-full">
+                                            <span class="text-gray-500 text-xs font-medium">50%</span>
+                                            <div class="w-full flex justify-end bg-white rounded-full h-1">
+                                                <div class="h-full bg-blue-600 rounded-full" style="width: 50%;"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- 320 -->
+                                <div class="w-full">
+                                    <audio class="w-full h-8" controls name="baran">
+                                        <source type="audio/mpeg"
+                                            src="../../../mp3/Hojat Ashrafzadeh & Reza Rashidpour - Baran Bebarad.mp3">
+                                    </audio>
+                                    <input type="file" id="mp3_320"  value="انتخاب تصوير" class="absolute invisible">
+                                    <label for="mp3_320" class="text-xs text-white font-normal rounded-md p-2 flex-center bg-purple-500 ">
+                                        <span>كيفيت 320</span>
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                                            <path d="M18 3a1 1 0 00-1.196-.98l-10 2A1 1 0 006 5v9.114A4.369 4.369 0 005 14c-1.657 0-3 .895-3 2s1.343 2 3 2 3-.895 3-2V7.82l8-1.6v5.894A4.37 4.37 0 0015 12c-1.657 0-3 .895-3 2s1.343 2 3 2 3-.895 3-2V3z" />
+                                          </svg>
+                                    </label>
+                                </div>
+                            </div>
                         </div>
                         <!-- btn -->
-                        <div class="col-span-2 flex-center">
+                        <div class="     col-span-2 flex-center">
                             <input type="submit" value="ويرايش" class="bg-green-500 md:w-1/2 w-full text-white rounded-md shadow-md h-7 cursor-pointer">
                         </div>
                     </form>
@@ -207,6 +248,18 @@
                 }
             }
         }
+    </script>
+    <script>
+        const inputFile= document.querySelector('#mp3_128');
+
+        inputFile.onchange = ({target}) =>{
+            let file=target.files[0];
+            if(file){
+                let fileName=file.name;
+                console.log(fileName);
+            }
+        }
+
     </script>
 </body>
 
